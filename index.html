@@ -3,87 +3,106 @@
     <head>
         <meta charset="UTF-8">
         <title>Andrei Churkin</title>
+        <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <table cellspacing = "15">
-            <tr>
-                <td>
-                    <img src="Kaguya.jpg" width="200" height="300" alt="Kaguya 18+">  
-                </td>
-                <td>
+        <div class="container">
+            <div class = "info">
+                <img src="Kaguya.jpg" width="200" height="300" alt="Kaguya 18+" class = "avatar">  
+                <!-- <img src="Kaguya.jpg" width="200" height="300" alt="Kaguya 18+" id = "avatar">  -->
+                <!-- id (#) уникален, class (.) могут быть одинаковыми-->
+
+                <div class ="info-text">
                     <h1>Андрей Чуркин</h1>
-                    <p><em>Я бывший сотрудник <strong>Valve</strong></em></p>
-                    <p>Люблю путешествовать, разбираться в видеоиграх, заниматься спортом и frontend разработкой</p>    
-                </td>
-            </tr>
-        </table>
+                    <p>Я бывший сотрудник <strong>Valve</strong></p>
+                    <p>Люблю путешествовать, разбираться в видеоиграх, заниматься спортом и frontend разработкой</p>  
+    
+                    <h4>Мои контакты</h4>
+                        <a href="https://vk.com/fix404" target="_blank">VK</a>
+                        |
+                        <a href="https://t.me/Harsyyy" target="_blank">Telegram</a>
+                </div>
+            </div>  
 
-        <hr>
+            <div class="card bg-yellow">
+                <h2>Мои хобби</h2>
+                <ol class = "list">
+                    <li>Videogames</li>
+                    <li>Code</li>
+                    <li>Travel</li>
+                    <li>Sex</li>
+                </ol>
+            </div>
+            
+            <div class="card bg-green">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                        <tr>
+                            <td>Liteinvest</td>
+                            <td>Traider</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>ООО"ЦИТ"</td>
+                            <td>Системный аналитик</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>Valve</td>
+                            <td>Lead frontend developer</td>
+                            <td>2022 - 2028</td>
+                        </tr>
+                        <tr>
+                            <td>Yandex</td>
+                            <td>Software developer</td>
+                            <td>2010 - 2019</td>
+                        </tr>
+                </table>
+            </div>
+            
+            <div class="card bg-red">
+                <h2>Steam profile</h2>
+                <ul class="link-list">
+                    <li>
+                        <a href="https://steamcommunity.com/id/Harsyyy/" target="_blank">Harsyyy</a>
+                    </li>
+                    <li>
+                        <a href="https://steamcommunity.com/groups/dydoslh" target="_blank">Моя группа в Steam</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="contact">
+                <h2>Связаться со мной</h2>
 
-        <h2>Мои контакты</h2>
-            <ul type = "square">
-                <li><a href="" target="_blank">VK</a></li>
-                <li><a href="" target="_blank">Telegram</a></li>
-            </ul>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Введите имя">
+                        </div>
         
-        <hr>
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" placeholder="Введите email">
+                        </div>
+                    </div>
 
-        <h2>Мои хобби</h2>
-            <ol type = "I">
-                <li>Videogames</li>
-                <li>Code</li>
-                <li>Travel</li>
-                <li>Sex</li>
-            </ol>
+                    <div class="form-group">
+                        <label for="email">Ваше сообщение:</label>
+                        <textarea id="text" rows="2" cols="25"></textarea>
+                    </div>
 
-        <hr>
-        
-        <h2>Опыт работы</h2>
-            <table>
-                    <tr>
-                        <th>Company</th>
-                        <th>Specialization</th>
-                        <th>Year</th>
-                    </tr>
-                    <tr>
-                        <td>ООО"ЦИТ"</td>
-                        <td>Системный аналитик</td>
-                        <td>2021 - 2021</td>
-                    </tr>
-                    <tr>
-                        <td>Valve</td>
-                        <td>Lead frontend developer</td>
-                        <td>2017 - 2022</td>
-                    </tr>
-            </table>
-        
-        <hr>
+                        <!-- input знать -->
+                        <input class="btn" type="submit" value="Call me!"> 
+                </form>
+            </div>
+            
+            <div class="position">
+                <div class="box"></div>
+            </div>
+        </div>
 
-        <h2>Steam profile</h2>
-            <a href="Steam.html" target="_blank">Перейти в профиль</a>
-
-        <hr>
-
-        <h2>Связаться со мной</h2>
-
-        <form action="/">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-
-            <br>
-
-            <label for="email">Ваш Email:</label>
-            <textarea id="text" rows="2" cols="25"></textarea>
-
-            <br>
-
-            <label for="email">Ваше сообщение:</label>
-            <input type="email" id="email" placeholder="Введите имя">
-
-            <br>
-            <!-- input знать -->
-            <input type="submit" value="Call me!"> 
-        </form>
-
+            <div style = "margin-bottom: 500px;"></div>
     </body>
 </html>
